@@ -1,0 +1,14 @@
+[project]
+name = "llm-reliability-kit"
+version = "0.1.0"
+description = "Pattern-uri de producție pentru apeluri LLM: retry, fallback, structured outputs, tool calling, cost"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.6"]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=1.0"]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
